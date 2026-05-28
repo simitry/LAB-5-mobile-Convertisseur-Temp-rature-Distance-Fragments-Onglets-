@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ConverterTabsJava</string>
+    <string name="menu_quit">Quitter</string>
+</resources>

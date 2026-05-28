@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversion Km ↔ Miles"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgDist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbKmToMiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Km → Miles" />
+
+        <RadioButton
+            android:id="@+id/rbMilesToKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Miles → Km" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etDistInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrer la valeur"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <Button
+        android:id="@+id/btnConvertDist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculer" />
+
+    <TextView
+        android:id="@+id/tvDistResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Résultat : -"
+        android:textSize="16sp" />
+</LinearLayout>
